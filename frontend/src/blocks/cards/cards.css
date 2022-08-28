@@ -1,0 +1,22 @@
+.cards{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 581px;
+}
+
+@media(min-width: 580px){
+  .cards{
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+}
+
+@media(min-width: 880px){
+  .cards{
+    max-width: 880px;
+  }
+}
+

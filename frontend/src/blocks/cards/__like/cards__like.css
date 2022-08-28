@@ -1,0 +1,36 @@
+.cards__like{
+  background-image: url(../../../images/cards__like.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 20px;
+  height: 19px;
+  width: 22px;
+
+  background-color: transparent;
+  border: none;
+}
+
+.cards__like:hover{
+  opacity: 0.5;
+  transition: opacity 0.5s ease;
+  cursor: pointer;
+}
+
+.cards__like-container{
+  display: grid;
+  justify-self: end;
+  align-self: center;
+}
+
+.cards__like-counter{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  margin-right: 19px;
+
+  color: #000000;
+}
+

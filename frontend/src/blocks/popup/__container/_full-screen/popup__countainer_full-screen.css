@@ -1,0 +1,11 @@
+.popup__container_full-screen{
+position: relative;
+width: auto;
+height: auto;
+border-radius: 0px;
+background-color: transparent;
+padding-bottom: 0;
+}
+
+
+

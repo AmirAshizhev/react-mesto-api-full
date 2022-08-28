@@ -1,0 +1,26 @@
+.header{
+  min-width: 293px;
+  border-bottom: 1px solid rgba(84, 84, 84, 0.7);
+  padding-top: 28px;
+  padding-left: 27px;
+  padding-bottom: 31px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+@media (min-width: 768px){
+  .header{
+    max-width: 880px;
+    padding-top: 45px;
+    padding-bottom: 41px;
+  }
+}
+
+@media (min-width: 934px){
+  .header{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+  }
+}

@@ -1,0 +1,32 @@
+.profile{
+  margin-top: 43px;
+  display: grid;
+  max-width: 880px;
+  margin-bottom: 36px;
+}
+
+@media (min-width: 450px){
+  .profile{
+    margin-top: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, max-content);
+    margin-bottom: 41px;
+
+  }
+}
+
+@media (min-width: 768px){
+  .profile{
+    grid-template-columns: 150px 1fr 150px;
+    grid-template-rows: max-content;
+
+    margin: 40px 30px 46px 30px;
+  }
+}
+
+@media (min-width: 940px){
+  .profile{
+
+    margin: 40px auto 51px auto;
+  }
+}

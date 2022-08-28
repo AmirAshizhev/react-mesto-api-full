@@ -1,0 +1,17 @@
+.profile__info{
+  color: white;
+  position: relative;
+  width: 282px;
+  margin-bottom: 33px; /*36px*/
+  justify-self: center;
+}
+
+
+@media (min-width: 768px){
+  .profile__info{
+    justify-self: start;
+    min-width: 336px;
+    align-self: center;
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,34 @@
+.cards__item{
+  display: grid;
+  grid-template-columns: 188px 94px;
+  grid-template-rows: 282px 79px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 282px;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+@media (min-width: 581px){
+  .cards__item{
+    margin-left: 0;
+    margin-right: 17px;
+  }
+
+  .cards__item:nth-of-type(2n){
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 880px){
+
+  .cards__item:nth-of-type(2n){
+    margin-right: 17px;
+  }
+
+  .cards__item:nth-of-type(3n){
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,18 @@
+.popup__container{
+  width: 282px;
+  padding-bottom: 25px;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  cursor: auto;
+}
+@media (min-width: 550px){
+  .popup__container{
+    width: 430px;
+    padding-bottom: 35px;
+  }
+}
+
+
+
+
