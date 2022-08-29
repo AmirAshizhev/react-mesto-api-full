@@ -1,7 +1,6 @@
 {
   "name": "mesto-react",
   "version": "0.1.0",
-  "homepage": "https://AmirAshizhev.github.io/react-mesto-auth",
   "private": true,
   "proxy": "http://localhost:3001",
   "dependencies": {
