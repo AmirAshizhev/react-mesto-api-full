@@ -3,6 +3,8 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const { errors } = require('celebrate');
 
+require('dotenv').config();
+
 const { login, createUser } = require('./controllers/users');
 const { auth } = require('./middlewares/auth');
 const NotFoundError = require('./errors/not-found-error');

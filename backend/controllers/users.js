@@ -6,6 +6,8 @@ const BadRequestError = require('../errors/bad-request-error');
 const UnauthorizedError = require('../errors/unauthorized-error');
 const ConflictError = require('../errors/conflict-error');
 
+const { NODE_ENV, JWT_SECRET } = process.env;
+
 exports.getUsers = (req, res, next) => {
   User.find({})
     .then((user) => res.send(user))
@@ -126,7 +128,7 @@ exports.login = (req, res, next) => {
       return bcrypt.compare(password, user.password)
         .then((matched) => {
           if (matched) {
-            const token = jwt.sign({ _id: user._id }, 'some-secret-word', { expiresIn: '7d' });
+            const token = jwt.sign({ _id: user._id }, NODE_ENV === 'production' ? JWT_SECRET : 'some-secret-word', { expiresIn: '7d' });
             // console.log(token);
             return res.send({ token });
           }
