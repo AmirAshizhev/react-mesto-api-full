@@ -19,6 +19,7 @@ const allowedCors = [
   'localhost:3000',
   'http://localhost:3000',
   'http://localhost:3001',
+  'http://mesto.amirashizhev.nomoredomains.sbs',
 ];
 
 app.use(bodyParser.json());
