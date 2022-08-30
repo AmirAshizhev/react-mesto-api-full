@@ -108,7 +108,7 @@ class Api {
 
 const api = new Api({
   // baseUrl: 'https://mesto.nomoreparties.co/v1/cohort-41',
-  baseUrl: 'http://api.mesto.amirashizhev.nomoredomains.sbs',
+  baseUrl: 'https://api.mesto.amirashizhev.nomoredomains.sbs',
   headers: {
     authorization: `Bearer ${localStorage.getItem('token')}`,
     'Content-Type': 'application/json',
